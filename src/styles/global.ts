@@ -27,13 +27,23 @@ const GlobalStyles: GlobalStyleComponent<
     }
 
     body {
+      height: 100%;
       font-family: ${theme.font.family};
-      font-size: ${theme.font.sizes.medium};
+      color: ${theme.colors.white};
 
       ${!removeBg &&
       css`
-        background-color: ${theme.colors.mainBg};
-      `}
+        background-color: ${theme.colors.blue};
+      `};
+    }
+
+    p {
+      font-size: 2rem;
+      line-height: ${theme.font.sizes.medium};
+    }
+
+    a {
+      color: ${theme.colors.cyan};
     }
   `};
 `
