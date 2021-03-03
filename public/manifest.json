@@ -1,5 +1,5 @@
 {
-  "name": "AnddersonRds - Boilerplate v2.0",
+  "name": "Dream Trips",
   "short_name": "Boilerplate v2.0",
   "icons": [
     {
@@ -14,7 +14,7 @@
     }
   ],
   "background_color": "#06092B",
-  "description": "Boilerlate utilizando Typescript, React, NextJS e Styled Components!",
+  "description": "A simple project to show the places I have traveled and the places I dream of traveling.",
   "display": "fullscreen",
   "start_url": "/",
   "theme_color": "#06092B"
