@@ -16,7 +16,8 @@
     "test:watch": "yarn test --watch",
     "generate": "yarn plop --plopfile ./generators/plopfile.js",
     "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook -s ./public"
+    "build-storybook": "build-storybook -s ./public",
+    "codegen": "graphql-codegen --config codegen.yml"
   },
   "lint-staged": {
     "src/**/*": [
@@ -26,6 +27,8 @@
   },
   "dependencies": {
     "@styled-icons/evaicons-outline": "^10.18.0",
+    "graphql": "^15.5.0",
+    "graphql-request": "^3.4.0",
     "leaflet": "^1.7.1",
     "next": "10.0.7",
     "next-pwa": "^5.0.5",
@@ -38,6 +41,10 @@
   "devDependencies": {
     "@babel/core": "^7.13.8",
     "@babel/preset-typescript": "^7.13.0",
+    "@graphql-codegen/add": "^2.0.2",
+    "@graphql-codegen/cli": "1.21.1",
+    "@graphql-codegen/typescript": "1.21.0",
+    "@graphql-codegen/typescript-operations": "1.17.14",
     "@storybook/addon-actions": "^6.1.21",
     "@storybook/addon-essentials": "^6.1.21",
     "@storybook/addon-links": "^6.1.21",
