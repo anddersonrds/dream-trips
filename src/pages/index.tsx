@@ -1,3 +1,19 @@
-export default function Home() {
-  return <h2>Espero que goste de usar esse boilerplate :)</h2>
+import dynamic from 'next/dynamic'
+import { InfoOutline } from '@styled-icons/evaicons-outline/InfoOutline'
+
+import LinkWrapper from 'components/LinkWrapper'
+
+const Map = dynamic(() => import('components/Map'), { ssr: false })
+
+const Home = () => {
+  return (
+    <>
+      <LinkWrapper href="/about">
+        <InfoOutline size={32} aria-label="About" />
+      </LinkWrapper>
+      <Map />
+    </>
+  )
 }
+
+export default Home
