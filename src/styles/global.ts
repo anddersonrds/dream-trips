@@ -26,10 +26,16 @@ const GlobalStyles: GlobalStyleComponent<
       font-size: 62.5%;
     }
 
-    body {
+    html,
+    body,
+    #__next {
       height: 100%;
-      font-family: ${theme.font.family};
+      background: ${theme.colors.blue};
       color: ${theme.colors.white};
+    }
+
+    body {
+      font-family: ${theme.font.family};
 
       ${!removeBg &&
       css`
