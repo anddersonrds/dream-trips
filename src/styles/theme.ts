@@ -19,8 +19,8 @@ export default {
     }
   },
   colors: {
-    blue: '#081845',
-    cyan: '#4AC7EE',
+    primary: '#19cdbf',
+    background: '#362a46',
     white: '#FFFFFF',
     gold: '#F9C80E'
   },
