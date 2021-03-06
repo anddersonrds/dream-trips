@@ -1,10 +1,11 @@
-import { render, screen } from '@testing-library/react'
+import { screen } from '@testing-library/react'
+import { renderWithTheme } from 'utils/tests/helpers'
 
 import Map from '.'
 
 describe('<Map />', () => {
   it('should render without any marker', () => {
-    render(<Map />)
+    renderWithTheme(<Map />)
 
     expect(
       screen.getByRole('link', { name: /a js library for interactive maps/i })
@@ -33,7 +34,7 @@ describe('<Map />', () => {
       }
     ]
 
-    render(<Map places={places} />)
+    renderWithTheme(<Map places={places} />)
 
     expect(screen.getByTitle(/fortaleza/i)).toBeInTheDocument()
     expect(screen.getByTitle(/reykjavik/i)).toBeInTheDocument()
