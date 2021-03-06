@@ -15,7 +15,7 @@ export const Wrapper = styled.div`
 
     &:hover {
       svg {
-        color: ${theme.colors.cyan};
+        color: ${theme.colors.primary};
       }
     }
   `}
